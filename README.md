@@ -16,20 +16,18 @@ BestWorstRounds
 
 Member functions of each class:
 
-Class Name              	Member function
 
-Fom1				              Form1_Load---Responsible for attaching data to data grid view.
 
-Solution			            Solution constructor---Here we are checking, who are under par players based on par_total and their stokes in each round.
-				                  Stores them in a list named ListOfUnderParPlayers.
+Fom1(Form1_Load)		---Responsible for attaching data to data grid view.
 
-Solution			            GetPlayersAsDictionary---Responsible for returning dictionary of all players. 
-				                  Return type is Dictionary<string, Player> 
+Solution(Solution constructor)	---Here we are checking, who are under par players based on par_total and their stokes in each round.
+				   Stores them in a list named ListOfUnderParPlayers.
 
-Solution			            GetUnderParPlayers---Resposible for returning all players who are under par.
-				                  Return type is List<string> 				
+Solution(GetPlayersAsDictionary) ---Responsible for returning dictionary of all players.Return type is Dictionary<string, Player> 
 
-Solution			            GetBestWorstRounds---Reponsible for returning all players who are under par along with that palyers best and worst rounds
-				                  Return type is Dictionary<string, BestWorstRounds> 
-				                  Here we are looping through the ListOfUnderParPlayers and checking 4 rounds of each player and determine the best and worst round.
+Solution(GetUnderParPlayers)     ---Resposible for returning all players who are under par.Return type is List<string> 				
+
+Solution(GetBestWorstRounds) 	 ---Reponsible for returning all players who are under par along with that palyers best and worst rounds
+				    Return type is Dictionary<string, BestWorstRounds>.
+				    Here we are looping through the ListOfUnderParPlayers and checking 4 rounds of each player and determine the best and worst round.
 
